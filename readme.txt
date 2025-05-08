@@ -13,12 +13,17 @@ Um timer Pomodoro interativo no terminal com dois gatinhos animados (Luna e Arte
 ## 🚀 Como Usar
 
 ### Requisitos
-- Python 3.10 ou superior
+- Python 3.10 ou superior (apenas para desenvolvimento)
 - Terminal com suporte a caracteres Unicode
 - Tamanho mínimo da janela: 80x20 caracteres
 
 ### Instalação
 
+#### Opção 1: Usando o Executável (Recomendado)
+1. Baixe o arquivo `PomodoroGatinhos.exe` da seção [Releases](https://github.com/seu-usuario/pomodoro-gatinhos/releases)
+2. Execute o arquivo `PomodoroGatinhos.exe`
+
+#### Opção 2: Usando o Código Fonte
 1. Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/pomodoro-gatinhos.git
@@ -30,11 +35,24 @@ cd pomodoro-gatinhos
 pip install -r requirements.txt
 ```
 
-### Executando
-
+3. Execute o programa:
 ```bash
 python pomodoro.py
 ```
+
+### Criando o Executável
+Se você quiser criar o executável:
+1. Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
+
+2. Execute o script de build:
+```bash
+python build.py
+```
+
+3. O executável será criado na pasta `dist`
 
 ### Controles
 
@@ -69,6 +87,7 @@ Os tempos padrão são:
 ```
 pomodoro-gatinhos/
 ├── pomodoro.py      # Código principal
+├── build.py         # Script para criar executável
 ├── requirements.txt # Dependências
 └── readme.txt      # Este arquivo
 ```
@@ -77,6 +96,7 @@ pomodoro-gatinhos/
 - Python 3.10+
 - Biblioteca curses para interface no terminal
 - Caracteres Unicode para animações
+- PyInstaller para criar executável
 
 ## 🤝 Contribuindo
 
